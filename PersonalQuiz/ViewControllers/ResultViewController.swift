@@ -9,8 +9,14 @@ import UIKit
 
 final class ResultViewController: UIViewController {
 
+    @IBOutlet var answersLabel: UILabel!
+    
+    var answers: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        answersLabel.text = answers
         
         navigationItem.hidesBackButton = true
 

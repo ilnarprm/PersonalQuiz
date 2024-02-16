@@ -41,7 +41,24 @@ final class QuestionsViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        var resultVC = segue.destination as? ResultViewController
+        resultVC?.answers = ""
+//        var animalDict: [Animal:Int] = [
+//            .cat: 0,
+//            .dog: 0,
+//            .rabbit: 0,
+//            .turtle: 0
+//        ]
+        for answersChoose in answersChosen {
+            resultVC?.answers += String(answersChoose.animal.rawValue)
+            //print(resultVC?.answers)
+//            switch answersChoose {
+//                case  animalDict.keys :
+//                    print()
+//                    
+//                    
+//            }
+        }
     }
     
     // MARK: - IB Actions

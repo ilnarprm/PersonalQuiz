@@ -318,12 +318,20 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="answers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRE-pI-Dn6">
+                                <rect key="frame" x="128.5" y="150.5" width="63" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ejH-dv-X4O"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="YRE-pI-Dn6" firstAttribute="centerX" secondItem="fN4-B1-rfr" secondAttribute="centerX" id="7Xa-hH-ZdC"/>
                             <constraint firstItem="PQD-JN-cre" firstAttribute="centerX" secondItem="fN4-B1-rfr" secondAttribute="centerX" id="MiA-ge-Rgc"/>
                             <constraint firstItem="PQD-JN-cre" firstAttribute="centerY" secondItem="fN4-B1-rfr" secondAttribute="centerY" id="UQ6-s3-aFP"/>
+                            <constraint firstItem="YRE-pI-Dn6" firstAttribute="top" secondItem="ejH-dv-X4O" secondAttribute="top" constant="58" id="aAk-6n-Fxc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Результат" id="icl-s8-iGo">
@@ -333,6 +341,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="answersLabel" destination="YRE-pI-Dn6" id="HUl-JP-wkC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29p-ct-q3e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
