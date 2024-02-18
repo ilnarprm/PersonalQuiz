@@ -43,12 +43,11 @@ final class QuestionsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let resultVC = segue.destination as? ResultViewController
         resultVC?.answers = ""
-        resultVC?.animalSelected = ""
 
         for answersChoose in answersChosen {
             resultVC?.answers += String(answersChoose.animal.rawValue)
-           
         }
+        
         resultVC?.animalSelected = String(answersChosen.first?.animal.rawValue ?? "🙈")
     }
     
