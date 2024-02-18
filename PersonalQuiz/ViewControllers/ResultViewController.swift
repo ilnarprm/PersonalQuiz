@@ -10,13 +10,16 @@ import UIKit
 final class ResultViewController: UIViewController {
 
     @IBOutlet var answersLabel: UILabel!
+    @IBOutlet var animalLabel: UILabel!
     
     var answers: String!
+    var animalSelected: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         answersLabel.text = answers
+        animalLabel.text = animalSelected
         
         navigationItem.hidesBackButton = true
 
